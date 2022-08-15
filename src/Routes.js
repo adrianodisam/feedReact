@@ -1,8 +1,11 @@
 import { Routes, Route } from 'react-router-dom';
-export default function appRoutes() {
+import Home from './pages/Home';
+import MaisVistos from './pages/MaisVistos';
+export default function AppRoutes() {
   return (
     <Routes>
-      <Route path="/" component={component} />
+      <Route path="/" element={<Home />} />
+      <Route path="/Mais-vistos" element={<MaisVistos />} />
     </Routes>
   );
 }
